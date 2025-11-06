@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section>
+    <form id="formulario" action="mailto:s2333254@gmail.com" method="post" enctype="text/plain" target="_blank">
+      <!---------------------- ingreso de datos -------------------------->
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="columna_izquierda"><label for="nombre" class="label_gris">Nombre</label></td>
+          <td class="columna_derecha"><input type="text" name="nombre" id="nombre" maxlength="30" required><span class="bold"> (*)</span></td>
+          <td class="columna_izquierda"><label for="apellido" class="label_gris">Apellido</label></td>
+          <td class="columna_derecha"><input type="text" name="apellido" id="apellido" maxlength="30" required><span class="bold"> (*)</span></td>
+        </tr>
+        <tr>
+          <td class="columna_izquierda"><label for="email" class="label_gris">Email</label></td>
+          <td class="columna_derecha"><input  type="email" name="email" id="email" maxlength="30" required><span class="bold"> (*)</span></td>
+          <td class="columna_izquierda"><label for="edad" class="label_gris">Edad</label></td>
+          <td class="columna_derecha"><input  type="edad" name="edad" id="edad" maxlength="3" required><span class="bold"> (*)</span></td>
+        </tr>
+
+        <!------------------------- selecciones -------------------------->
+        <tr><td colspan="4" class="renglon"></td></tr>
+        <tr>
+          <td class="columna_izquierda_opciones">Sexo</td>
+          <td>
+            <label><input type="radio" name="sexo" id="sexo_0" value="hombre"> Hombre</label>
+            <label><input type="radio" name="sexo" id="sexo_1" value="mujer"> Mujer</label>
+            <label><input type="radio" name="sexo" id="sexo_2" value="otre"> Otre</label>
+          </td>
+          <td class="columna_izquierda_opciones">Contactar a:</td>
+          <td>
+            <label><input type="checkbox" name="artista" id="artista_0" value="mora"> Mora Antoci</label>
+            <label><input type="checkbox" name="artista" id="artista_1" value="seba"> Sebastian Fausto</label>
+            <label><input type="checkbox" name="artista" id="artista_2" value="valen"> Valentín Moseinco</label>
+            <label><input type="checkbox" name="artista" id="artista_3" value="lucero"> Lucero Santin</label>
+          </td>
+        </tr>
+
+        <!------------------------- comentarios -------------------------->
+        <tr><td colspan="4" class="renglon"></td></tr>
+        <tr>
+          <td class="columna_izquierda"><label for="comentarios" class="label_gris">Comentarios</label></td>
+          <td colspan="3" class="columna_derecha">
+            <textarea name="comentarios" id="comentarios" maxlength="700" placeholder="Dínos que necesita..."></textarea>
+          </td>
+        </tr>
+
+        <!--------------------------- botones ---------------------------->
+        <tr>
+          <td colspan="4">
+            <input type="submit" name="enviar" id="enviar" value="Enviar" formenctype="text/plain">
+            <input type="reset" name="borrar" id="borrar" value="Borrar">
+          </td>
+        </tr>
+      </table>
+
+    </form>
+  </section>
+
+    <footer>
+        <p> 2025 Portfolio Artistas Multimediales</p>
+    </footer>
+
+</body>
+</html>
